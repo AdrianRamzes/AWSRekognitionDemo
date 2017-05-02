@@ -1,0 +1,268 @@
+{
+  "FaceDetails": [
+    {
+      "AgeRange": {
+        "High": 38,
+        "Low": 23
+      },
+      "Beard": {
+        "Confidence": 99.97606,
+        "Value": false
+      },
+      "BoundingBox": {
+        "Height": 0.6105769,
+        "Left": 0.212740391,
+        "Top": 0.2676282,
+        "Width": 0.457932681
+      },
+      "Confidence": 99.999794,
+      "Emotions": [
+        {
+          "Confidence": 25.7565022,
+          "Type": {
+            "Value": "CONFUSED"
+          }
+        },
+        {
+          "Confidence": 8.192196,
+          "Type": {
+            "Value": "HAPPY"
+          }
+        },
+        {
+          "Confidence": 7.62731457,
+          "Type": {
+            "Value": "SAD"
+          }
+        }
+      ],
+      "Eyeglasses": {
+        "Confidence": 99.92319,
+        "Value": false
+      },
+      "EyesOpen": {
+        "Confidence": 99.97994,
+        "Value": true
+      },
+      "Gender": {
+        "Confidence": 99.92924,
+        "Value": {
+          "Value": "MALE"
+        }
+      },
+      "Landmarks": [
+        {
+          "Type": {
+            "Value": "eyeLeft"
+          },
+          "X": 0.36524418,
+          "Y": 0.4981564
+        },
+        {
+          "Type": {
+            "Value": "eyeRight"
+          },
+          "X": 0.5189947,
+          "Y": 0.5034665
+        },
+        {
+          "Type": {
+            "Value": "NOSE"
+          },
+          "X": 0.438756078,
+          "Y": 0.6344233
+        },
+        {
+          "Type": {
+            "Value": "mouthLeft"
+          },
+          "X": 0.378135383,
+          "Y": 0.7345863
+        },
+        {
+          "Type": {
+            "Value": "mouthRight"
+          },
+          "X": 0.4998452,
+          "Y": 0.7364912
+        },
+        {
+          "Type": {
+            "Value": "leftPupil"
+          },
+          "X": 0.375567973,
+          "Y": 0.4950323
+        },
+        {
+          "Type": {
+            "Value": "rightPupil"
+          },
+          "X": 0.515591443,
+          "Y": 0.504353344
+        },
+        {
+          "Type": {
+            "Value": "leftEyeBrowLeft"
+          },
+          "X": 0.302631319,
+          "Y": 0.444424838
+        },
+        {
+          "Type": {
+            "Value": "leftEyeBrowRight"
+          },
+          "X": 0.350815415,
+          "Y": 0.414985836
+        },
+        {
+          "Type": {
+            "Value": "leftEyeBrowUp"
+          },
+          "X": 0.404414,
+          "Y": 0.4221135
+        },
+        {
+          "Type": {
+            "Value": "rightEyeBrowLeft"
+          },
+          "X": 0.482028335,
+          "Y": 0.427586019
+        },
+        {
+          "Type": {
+            "Value": "rightEyeBrowRight"
+          },
+          "X": 0.534070551,
+          "Y": 0.41892606
+        },
+        {
+          "Type": {
+            "Value": "rightEyeBrowUp"
+          },
+          "X": 0.5784878,
+          "Y": 0.44492957
+        },
+        {
+          "Type": {
+            "Value": "leftEyeLeft"
+          },
+          "X": 0.337643743,
+          "Y": 0.500235558
+        },
+        {
+          "Type": {
+            "Value": "leftEyeRight"
+          },
+          "X": 0.391193032,
+          "Y": 0.497293442
+        },
+        {
+          "Type": {
+            "Value": "leftEyeUp"
+          },
+          "X": 0.365563929,
+          "Y": 0.486595064
+        },
+        {
+          "Type": {
+            "Value": "leftEyeDown"
+          },
+          "X": 0.365750253,
+          "Y": 0.5091097
+        },
+        {
+          "Type": {
+            "Value": "rightEyeLeft"
+          },
+          "X": 0.4917709,
+          "Y": 0.501490653
+        },
+        {
+          "Type": {
+            "Value": "rightEyeRight"
+          },
+          "X": 0.5436263,
+          "Y": 0.5064017
+        },
+        {
+          "Type": {
+            "Value": "rightEyeUp"
+          },
+          "X": 0.520139933,
+          "Y": 0.490695655
+        },
+        {
+          "Type": {
+            "Value": "rightEyeDown"
+          },
+          "X": 0.519145548,
+          "Y": 0.51575774
+        },
+        {
+          "Type": {
+            "Value": "noseLeft"
+          },
+          "X": 0.401093423,
+          "Y": 0.6499297
+        },
+        {
+          "Type": {
+            "Value": "noseRight"
+          },
+          "X": 0.476511,
+          "Y": 0.656308532
+        },
+        {
+          "Type": {
+            "Value": "mouthUp"
+          },
+          "X": 0.439238369,
+          "Y": 0.717366934
+        },
+        {
+          "Type": {
+            "Value": "mouthDown"
+          },
+          "X": 0.434597582,
+          "Y": 0.7783508
+        }
+      ],
+      "MouthOpen": {
+        "Confidence": 98.2210541,
+        "Value": false
+      },
+      "Mustache": {
+        "Confidence": 99.90887,
+        "Value": false
+      },
+      "Pose": {
+        "Pitch": -1.89897108,
+        "Roll": 1.04721928,
+        "Yaw": 0.299326867
+      },
+      "Quality": {
+        "Brightness": 36.8038254,
+        "Sharpness": 99.88452
+      },
+      "Smile": {
+        "Confidence": 99.62742,
+        "Value": false
+      },
+      "Sunglasses": {
+        "Confidence": 99.02033,
+        "Value": false
+      }
+    }
+  ],
+  "OrientationCorrection": {
+    "Value": "ROTATE_0"
+  },
+  "ResponseMetadata": {
+    "RequestId": "f6a11cd4-223e-11e7-a5e6-953d6d25cebb",
+    "Metadata": {
+
+    }
+  },
+  "ContentLength": 2767,
+  "HttpStatusCode": 200
+}

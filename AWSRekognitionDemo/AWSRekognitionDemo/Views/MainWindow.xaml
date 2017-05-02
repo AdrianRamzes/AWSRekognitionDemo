@@ -1,0 +1,49 @@
+﻿<Window x:Class="AWSRekognitionDemo.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AWSRekognitionDemo.Views"
+        xmlns:viewModels="clr-namespace:AWSRekognitionDemo.ViewModels"
+        xmlns:converters="clr-namespace:AWSRekognitionDemo.Converters"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1050">
+    <Window.Resources>
+        <viewModels:MainWindowViewModel x:Key="MainWindowViewModel" />
+        <converters:BitmapToImageSourceConverter x:Key="BitmapToImageSourceConverter"/>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
+
+    <Grid DataContext="{StaticResource MainWindowViewModel}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Name="v_Image_Frame" Source="{Binding Frame, Converter={StaticResource BitmapToImageSourceConverter}}" Stretch="Uniform"/>
+        <Image Name="v_Image_Photo" Source="{Binding Photo, Converter={StaticResource BitmapToImageSourceConverter}}" Stretch="Uniform"/>
+
+        <StackPanel  Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5">
+            <Button Name="v_Button_ToggleWebCam" Command="{Binding ToggleWebCamServiceCommand}" Click="v_Button_ToggleWebCam_Click"  Content="Capture" />
+            <Button Name="v_Button_Recognize" Command="{Binding RecognizeCommand}" 
+                    Visibility="{Binding Path=IsRecognitionAvailable, Converter={StaticResource BooleanToVisibilityConverter}}" 
+                    Content="Recognize" Margin="10,0,0,0"/>
+        </StackPanel>
+
+        <ListBox Grid.Column="1" ItemsSource="{Binding RecognitionItems}" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Height="30" Width="100">
+                        <TextBlock Text="{Binding Name}" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                        <TextBlock Text="{Binding Value}" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+                        <TextBlock Text="{Binding Confidence, StringFormat=Conf: {0} }" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
